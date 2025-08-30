@@ -26,6 +26,7 @@ textarea {
 }
 
 button {
+  display: block;
   cursor: pointer;
 }
 
