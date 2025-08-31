@@ -1,0 +1,40 @@
+.welcome-section {
+}
+
+.welcome-text-title {
+  font-family: Quicksand, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0b0803;
+}
+
+.welcome-title {
+  font-family: Aboreto, sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #0b0803;
+}
+
+.welcome-text {
+  font-family: Quicksand, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #0b0803;
+}
+
+.welcome-btn {
+  border-radius: 100px;
+  padding: 10px 24px;
+  width: 181px;
+  height: 44px;
+
+  box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+    inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+  background: #6f4e37;
+}
