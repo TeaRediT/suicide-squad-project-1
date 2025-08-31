@@ -1,3 +1,5 @@
+/* mobile */
+
 .experience-section {
   padding: 64px 0;
 }
@@ -36,4 +38,22 @@
 
 .experience-item img {
   width: 100%;
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) {
+  .experience-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .experience-item {
+    width: calc((100% - 32px) / 2);
+  }
+
+  .experience-item:last-child {
+    width: 100%;
+  }
 }
