@@ -1,0 +1,16 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.star-svg-full {
+    fill: black;
+    border-color: black;
+}
+
+.star-svg-hollow {
+    fill: white;
+    stroke: black;
+}
