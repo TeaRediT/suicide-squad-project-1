@@ -1,0 +1,43 @@
+/* mobile */
+
+.experience-section {
+  padding: 64px 0;
+}
+
+.experience-title {
+  font-family: 'Aboreto', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+
+  margin-bottom: 24px;
+}
+
+.experience-text {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+
+  margin-bottom: 32px;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.experience-item {
+  border-radius: 32px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.experience-item img {
+  width: 100%;
+}
+
+/* tablet */
