@@ -50,10 +50,19 @@
   }
 
   .experience-item {
-    width: calc((100% - 32px) / 2);
+    width: auto;
+  }
+}
+
+/* desktop */
+
+@media screen and (min-width: 1440px) {
+  .experience-title {
+    font-size: 48px;
   }
 
-  .experience-item:last-child {
-    width: 100%;
+  .experience-list {
+    flex-direction: column;
+    height: 948px;
   }
 }
