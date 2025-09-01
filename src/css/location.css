@@ -25,7 +25,7 @@ ul {
 }
 
 .location-header {
-    font-family: Aboreto, sans-serif;
+    font-family: "Aboreto", sans-serif;
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: -0.01em;
@@ -45,11 +45,12 @@ ul {
 }
 
 .contact-icon {
+    fill: #0b0803;
     margin-bottom: 16px;
 }
 
 .contact-header {
-    font-family: Aboreto, sans-serif;
+    font-family: "Aboreto", sans-serif;
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: -0.01em;
@@ -85,6 +86,9 @@ ul {
     text-decoration: none;
     color: #0b0803;
     transition: opacity ease-in-out 250ms;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .directions-link:hover,
@@ -96,10 +100,8 @@ ul {
     opacity: 0.7;
 }
 
-.directions-container {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.direction-icon {
+    fill: #0b0803;
 }
 
 .location-container {
