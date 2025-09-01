@@ -1,4 +1,5 @@
 pullrequests.txt
+pull-requests-LV.txt
 
 # Logs
 logs
@@ -8,6 +9,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+pull-requests.txt
+
 
 node_modules
 dist
