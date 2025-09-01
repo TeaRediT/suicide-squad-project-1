@@ -1,9 +1,13 @@
+.testimonials-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
 
 .testimonials-h {
   font-family: "Aboreto", sans-serif;
   font-weight: 400;
   font-size: 36px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: -0.01em;
   margin-bottom: 24px;
 }
@@ -16,7 +20,6 @@
 
 .rewev-name {
   font-weight: 600;
-  font-size: 16px;
   line-height: 150%;
   margin-top: 24px;
   
@@ -26,13 +29,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  max-width: 288px;
-  justify-content: center;
 }
 
 .rewev-li {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
   padding: 32px;
   border: 1px solid rgba(11, 8, 3, 0.15);
@@ -53,7 +53,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
-  max-width: 116px;
   margin-bottom: 24px;
 }
 
@@ -63,22 +62,15 @@
 }
 
 
+
 @media screen and (min-width: 768px) {
   .rewev-ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
     justify-content: center;
-    max-width: 720px;
-    margin: 0 auto;
   }
 
   .rewev-li {
     width: 340px;
     height: 253px;
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
     box-sizing: border-box;
   }
 
@@ -88,27 +80,16 @@
 }
 }
 @media screen and (min-width: 1440px) {
-  .rewev-ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-content: space-between;
-    max-width: 1312px;
-    margin: 0 auto;
-  }
+
 
   .rewev-li {
     width: 310px;
     height: 304px;
-    display: flex;
-    flex-direction: column;
-    padding: 24px;
-    box-sizing: border-box;
   }
 
   .testimonials-h {
     font-size: 46px;
-    width: 416px;
+    width: 300px;
   }
 
   .rewev-name {
