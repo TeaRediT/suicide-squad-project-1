@@ -16,7 +16,6 @@ ul {
 
 .find-paragraph {
     font-weight: 600;
-    font-size: 16px;
     line-height: 1.5;
     margin-bottom: 16px;
 }
@@ -26,7 +25,7 @@ ul {
 }
 
 .location-header {
-    font-family: Aboreto;
+    font-family: Aboreto, sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 1.2;
@@ -52,8 +51,7 @@ ul {
 }
 
 .contact-header {
-    font-family: Aboreto;
-    font-weight: 400;
+    font-family: Aboreto, sans-serif;
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: -0.01em;
@@ -63,16 +61,22 @@ ul {
 
 .contact-link {
     display: inline-block;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
     text-decoration: underline;
     color: #0b0803;
+    transition: opacity ease-in-out 250ms;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    opacity: 0.5;
+}
+
+.contact-link:active {
+    opacity: 0.7;
 }
 
 .office-paragraph {
-    font-weight: 400;
-    font-size: 16px; 
     line-height: 1.5;
     margin-bottom: 16px;
 }
@@ -83,6 +87,16 @@ ul {
     line-height: 1.5;
     text-decoration: none;
     color: #0b0803;
+    transition: opacity ease-in-out 250ms;
+}
+
+.directions-link:hover,
+.directions-link:focus {
+    opacity: 0.5;
+}
+
+.directions-link:active {
+    opacity: 0.7;
 }
 
 .directions-container {
@@ -94,13 +108,11 @@ ul {
 .location-container {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 32px;
 }
 
 .map-container {
     height: 307px;
-    min-width: 288px;
-    max-width: 343px;
     border-radius: 40px;
     overflow: hidden;
 }
@@ -131,9 +143,9 @@ ul {
 
 @media screen and (min-width:1440px) {
     .location-container {
-        display: flex;
         flex-direction: row;
-        gap: 24px;
+        gap: 0;
+        justify-content: space-between;
     }
 
     .contacts {
@@ -142,7 +154,6 @@ ul {
 
     .location-header {
         font-size: 48px;
-        line-height: 1.2;
     }
 
     .location-sub-container {
