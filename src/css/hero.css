@@ -1,23 +1,18 @@
 .hero-section{
-    display: flex;
-    align-items: center;
     padding: 109px 0;
     background-color: #2e2f42;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ),
-    url(/images/hero/hero-tablet1x.jpg);
+    url(/images/hero/hero-mobile1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-position: center;
     width: 100%;
     min-width: 320px;
-    max-width: 375px ;
+    max-width: 375px;
     margin: 0 auto;
-    
-
 }
 .hero-title{
     font-family: "Aboreto", sans-serif;
@@ -26,20 +21,16 @@
     line-height: 1.2;
     letter-spacing: -0.01em;
     color: #fff;
-    text-align: start;
     margin-bottom: 24px;
 }
 .hero-text{
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
     color: #fff;
-    width: 100%;
     margin-bottom: 32px;
 }
 .hero-button{
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.5;
     color: #fff;
     box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), 
@@ -50,9 +41,10 @@
     background: #6f4e37;
     border-radius: 100px;
     padding: 10px 0;
-    max-width: 135px;
-    display: block;
+    min-width: 135px;
+    display: inline-block;
     text-align: center;
+    transition: opacity 250ms ease-in-out;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -70,12 +62,11 @@
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ),
-        url(/images/hero/hero-tablet2x.jpg);
+        url(/images/hero/hero-mobile2x.jpg);
     }
 }
 @media screen and (min-width:768px) {
     .hero-section{
-        display: block;
         background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
@@ -93,23 +84,21 @@
         url(/images/hero/hero-tablet2x.jpg);
     }
 }
-.hero-title{
-    max-width: 560px;
-
+    .hero-title{
+        width: 560px;
 }   
-.hero-text{
-    max-width: 560px;
+    .hero-text{
+        width: 560px;
 }
 }
 @media screen and (min-width: 1440px){
     .hero-section{
-        display: block;
         background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
     ),
         url(/images/hero/hero-desktop@1x.jpg);
-        padding: 312px 0;
+        padding: 259px 0;
         max-width: 1440px;
     }
     @media (min-resolution:192dpi){
@@ -121,7 +110,7 @@
         url(/images/hero/hero-desktop@2x.jpg);
     }
 }
-.hero-title{
-    font-size: 56px;
+    .hero-title{
+        font-size: 56px;
 }
 }
