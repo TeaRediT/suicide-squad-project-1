@@ -1,0 +1,83 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+  z-index: 999;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+  .backdrop.is-open {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms ease-in-out;
+  background: #e0cbb4;
+}
+
+.mobile-button-close {
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: 0;
+}
+
+.mobile-icon-x {
+  fill: #0b0803;
+}
+
+.mobile-link {
+  padding: 18px 0;
+  line-height: 0;
+}
+
+.mobile-logo {
+  fill: #0b0803;
+}
+
+.mobile-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+.mobile-list-item {
+  color: #0b0803;
+  transition: opacity 250ms ease-in-out;
+  line-height: 1.5;
+}
+
+.mobile-list-item:hover,
+.mobile-list-item:focus {
+  opacity: 0.5;
+}
+
+.mobile-list-item:active {
+  opacity: 0.7;
+}
