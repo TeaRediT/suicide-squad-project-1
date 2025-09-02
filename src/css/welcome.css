@@ -19,9 +19,7 @@
 .welcome-text-title {
   font-family: Quicksand, sans-serif;
   font-weight: 600;
-  font-size: 16px;
   line-height: 1.5;
-  color: #0b0803;
 
   margin-bottom: 16px;
 }
@@ -32,23 +30,16 @@
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  color: #0b0803;
 }
 
 .welcome-text {
-  font-family: Quicksand, sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  color: #0b0803;
 
   margin-bottom: 32px;
 }
 
 .welcome-btn {
-  cursor: pointer;
-
-  font-family: Quicksand, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -61,10 +52,9 @@
     inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
   background: #6f4e37;
 
-  width: 100%;
   min-width: 288px;
   height: 44px;
-  padding: 10px 24px;
+  padding: 10px 0;
 
   display: flex;
   align-items: center;
@@ -87,10 +77,8 @@
 }
 
 .welcome-img {
-  display: block;
   width: 100%;
   border-radius: 40px;
-  object-fit: cover;
 }
 
 /* Tablet */
@@ -98,6 +86,8 @@
 @media screen and (min-width: 768px) {
   .welcome-container-text-part {
     flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
   }
 
   .welcome-container-title {
@@ -112,7 +102,9 @@
   }
 
   .welcome-btn {
-    max-width: 181px;
+    display: inline-flex;
+    min-width: 181px;
+    width: auto;
   }
 }
 
