@@ -77,8 +77,20 @@
   margin-left: 12px;
 }
 
+.welcome-btn:hover,
+.welcome-btn:focus {
+  opacity: 0.5;
+}
+
+.welcome-btn:active {
+  background: #6f4e37;
+}
+
 .welcome-img {
+  display: block;
+  width: 100%;
   border-radius: 40px;
+  object-fit: cover;
 }
 
 /* Tablet */
@@ -86,7 +98,17 @@
 @media screen and (min-width: 768px) {
   .welcome-container-text-part {
     flex-direction: row;
-    justify-content: center;
+  }
+
+  .welcome-container-title {
+    max-width: 336px;
+    width: 100%;
+    height: 169px;
+  }
+  .welcome-container-text {
+    max-width: 336px;
+    width: 100%;
+    height: 265px;
   }
 
   .welcome-btn {
@@ -98,6 +120,17 @@
 @media screen and (min-width: 1440px) {
   .welcome-container {
     gap: 80px;
+  }
+
+  .welcome-container-title {
+    max-width: 640px;
+    width: 100%;
+    height: 156px;
+  }
+  .welcome-container-text {
+    max-width: 640px;
+    width: 100%;
+    height: 184px;
   }
 
   .welcome-title {
