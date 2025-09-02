@@ -53,9 +53,7 @@
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
-  text-align: center;
 
-  border: none;
   border-radius: 100px;
   box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
     inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
@@ -63,6 +61,7 @@
     inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
   background: #6f4e37;
 
+  width: 100%;
   min-width: 288px;
   height: 44px;
   padding: 10px 24px;
@@ -70,7 +69,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .icon-location-welcome {
@@ -85,6 +84,10 @@
 /* Tablet */
 
 @media screen and (min-width: 768px) {
+  .welcome-container-text-part {
+    flex-direction: row;
+  }
+
   .welcome-btn {
     width: 181px;
   }
