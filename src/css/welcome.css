@@ -86,10 +86,11 @@
 @media screen and (min-width: 768px) {
   .welcome-container-text-part {
     flex-direction: row;
+    justify-content: center;
   }
 
   .welcome-btn {
-    width: 181px;
+    max-width: 181px;
   }
 }
 
