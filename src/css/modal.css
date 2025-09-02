@@ -6,27 +6,33 @@
     height: 100%;
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;
     transition: opacity 250ms ease-in-out, 
                 visibility 250ms ease-in-out;
+    z-index: 999;
 }
 
 .backdrop.is-open{
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+        opacity: 1;
+        visibility: visible;
 }
 
-.modal {
+@media screen and (min-width:768px){
+    .backdrop.is-open{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+.modal{
     position:absolute;
     top:50%;
     left:50%;
-    width: 320px;
+    width: 100%;
     height: 100%;
     transform: translate(-50%, -50%);
     transition: transform 250ms ease-in-out;
-    padding-left: 16px;
-    padding-right: 16px;
     background: #E0CBB4;
 }
 
@@ -62,12 +68,11 @@
     flex-direction:column;
     gap: 32px;
     align-items: center;
-    justify-content: center;
 }
 
 .mobile-list-item{
     color: #0B0803;
-    transition: opacity 500ms  ease-in-out;
+    transition: opacity 250ms  ease-in-out;
     line-height: 1.5;    
 }
 
