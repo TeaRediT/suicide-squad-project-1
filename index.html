@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <title>CoffeeJoy</title>
+    <script type="module" crossorigin src="/suicide-squad-project-1/index.js"></script>
     <link rel="stylesheet" crossorigin href="/suicide-squad-project-1/assets/index-BKQN0hkL.css">
   </head>
   <body>
@@ -85,7 +86,7 @@
         </ul>
       </nav>
       <!--SVG-button-->
-      <button type="button" class="header-button">
+      <button type="button" class="header-button" data-menu-open>
         <svg width="24px" height="24px">
           <use href="/suicide-squad-project-1/assets/icons-CdZIomAV.svg#icon-mobile-menu"></use>
         </svg>
@@ -612,7 +613,7 @@
     </main>
     <footer class="footer">footer</footer>
 
-    <div class="backdrop">
+    <div class="backdrop" data-menu>
   <div class="modal container">
     <div class="mobile-top">
       <a href="/index.html" class="mobile-link">
@@ -652,7 +653,7 @@
           ></path>
         </svg>
       </a>
-      <button type="button" class="mobile-button-close">
+      <button type="button" class="mobile-button-close" data-menu-close>
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
           <path
             d="M10.192 0.344238L5.94897 4.58624L1.70697 0.344238L0.292969 1.75824L4.53497 6.00024L0.292969 10.2422L1.70697 11.6562L5.94897 7.41424L10.192 11.6562L11.606 10.2422L7.36397 6.00024L11.606 1.75824L10.192 0.344238Z"
@@ -684,6 +685,5 @@
 </div>
 
     
-    <!-- <script type="module" src="./main.js"></script> -->
   </body>
 </html>
