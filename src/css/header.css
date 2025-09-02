@@ -1,0 +1,76 @@
+.header-link {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  line-height: 0;
+}
+
+@media screen and (min-width: 768px) {
+  header .container {
+    padding: 0 64px;
+  }
+}
+
+.logo {
+  fill: #0b0803;
+}
+
+/*Header-box*/
+.header-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Button*/
+.header-button {
+  width: 48px;
+  height: 48px;
+  background: transparent;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-button {
+    display: none;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.navigation-list {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-list {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.navigation-list-item {
+  display: block;
+  line-height: 1.5;
+  color: #0b0803;
+  transition: opacity 250ms ease-in-out;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.navigation-list-item:hover,
+.navigation-list-item:focus {
+  opacity: 0.5;
+}
+
+.navigation-list-item:active {
+  opacity: 0.7;
+}
