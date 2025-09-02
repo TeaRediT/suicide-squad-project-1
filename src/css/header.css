@@ -1,8 +1,9 @@
-.header{
-    background: #E0CBB4; 
+.header-link{
     padding-top: 18px;
     padding-bottom: 18px;
+    line-height: 0; 
 }
+
 
 @media screen and (min-width:768px){
     header .container{
@@ -11,19 +12,7 @@
 }
 
 .logo{
-    stroke: #000000;  
-}
-
-@media screen and (min-width:768px){
-    .logo{
-        margin-right: 100px;
-    }
-}
-
-@media screen and (min-width:1440px){
-    .logo{
-        margin-right: 772px;
-    }
+    fill: #0B0803; 
 }
 
 /*Header-box*/
@@ -37,7 +26,7 @@
 .header-button{
     width: 48px;
     height: 48px;
-    background: #E0CBB4;
+    background: transparent;
     border: none;
 }
 
@@ -51,10 +40,10 @@
     display: flex;
     align-items: center;
 }
-
-@screen and (min-width:768px){
+@media screen and (min-width:768px){
     .navigation{
-        justify-content: center;
+        justify-content: space-between;       
+        width:100%;
     }
 }
 
@@ -71,14 +60,19 @@
 
 .navigation-list-item{
     display: block;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 1.5;
     color: #0B0803;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms ease-in-out(0.4, 0, 0.2, 1);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-.navigation-list-item:hover{
+.navigation-list-item:hover,
+.navigation-list-item:focus{
     opacity: 0.5;
+}
+
+.navigation-list-item:active{
+    opacity: 0.7;
 }
 
