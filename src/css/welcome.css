@@ -60,6 +60,8 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
+
+  transition: opacity ease-in-out 250ms;
 }
 
 .icon-location-welcome {
@@ -73,7 +75,7 @@
 }
 
 .welcome-btn:active {
-  background: #6f4e37;
+  opacity: 1;
 }
 
 .welcome-img {
