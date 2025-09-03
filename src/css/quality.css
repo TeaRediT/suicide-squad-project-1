@@ -1,0 +1,124 @@
+/* --- Секція Quality: стилі для мобільної версії (від 320px) --- */
+.quality-section {
+  padding: 64px 0;
+}
+
+.quality-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.quality-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-subtitle {
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-family: 'Aboreto', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.quality-description {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.quality-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.quality-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.quality-image {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 32px;
+}
+
+.quality-image img {
+  width: 100%;
+}
+
+.quality-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.quality-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.quality-text {
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* --- Медіазапити --- */
+
+@media (min-width: 768px) {
+  .section-title {
+    width: 452px;
+  }
+
+  .quality-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .quality-item {
+    width: 340px;
+  }
+
+  .quality-item:last-child {
+    width: 704px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .quality-header {
+    width: 768px;
+  }
+
+  .section-title {
+    font-size: 48px;
+    width: auto;
+  }
+
+  .quality-list {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .quality-item,
+  .quality-item:last-child {
+    width: calc((100% - 48px) / 3);
+  }
+}
