@@ -1,0 +1,53 @@
+<section class="modal-coffee">
+  <div class="subscription-modal">
+    <div class="subscription-content">
+      <!-- кнопка закриття -->
+      <button type="button" class="subscription-close">
+        <svg  class="modal-icon" width="32px" height="32px">
+          <use href="/images/svg/icons.svg#icon-x-menu"></use>
+        </svg>
+      </button>
+  
+      <!-- заголовок -->
+      <h2 class="subscription-title">Welcome to the world of CoffeeJoy!</h2>
+  
+      <!-- опис -->
+      <p class="subscription-text">
+        Fresh brews, special offers, and cozy updates are coming your way
+      </p>
+  
+      <!-- зображення -->
+<picture>
+        <source
+          srcset="
+            /images/success_subscription/Generate-desktop.jpg    1x,
+            /images/success_subscription/Generate-desktop-x2.jpg 2x
+          "
+          media="(min-width:1440px)"
+        />
+        <source
+          srcset="
+            /images/success_subscription/Generate-tablet.jpg    1x,
+            /images/success_subscription/Generate-tablet-x2.jpg 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            /images/success_subscription/Generate-mobile.jpg 1x,
+            /images/success_subscription/Generate-mobile-x2  2x
+          "
+          media="(max-width:767px)"
+        />
+        <img
+          src="/images/success_subscription/Generate-desktop.jpg"
+          alt="Coffee and croissant"
+          class="subscription-image"
+        />
+      </picture>
+  
+      <!-- кнопка Close -->
+      <button type="button" class="subscription-btn">Close</button>
+    </div>
+  </div>
+</section>
