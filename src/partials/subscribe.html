@@ -7,7 +7,7 @@
         today!
       </p>
       <form class="subscribe-form">
-        <label class="subscribe-label">
+        <div class="form-content">
           <input
             class="subscribe-input"
             type="email"
@@ -15,10 +15,11 @@
             name="email"
             placeholder="Your Email Here"
             required
+            autocomplete="email"
           />
+          <label class="subscribe-label" for="email"></label>
           <p class="subscribe-input-error">Error Text</p>
-        </label>
-        <p class="subscribe-input-error">Error Text</p>
+        </div>
         <button type="submit">
           Subscribe
           <svg width="24" height="24">

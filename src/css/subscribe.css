@@ -96,7 +96,7 @@
   color: #7f1c1c;
 }
 
-.subscribe-input:not(:placeholder-shown):invalid + .subscribe-input-error {
+.subscribe-input:not(:placeholder-shown):invalid ~ .subscribe-input-error {
   display: block;
 }
 
