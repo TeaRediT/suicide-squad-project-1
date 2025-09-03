@@ -1,61 +1,104 @@
-.footer{
+/* Базові стилі (desktop) */
+.footer {
     background: var(--Color-Scheme-2-Background, #B58869);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1440;
-height: 201;
-gap: 32px;
-padding-top: 24px;
-padding-right: 64px;
-padding-bottom: 24px;
-padding-left: 64px;
-
-}
-.footer-link {
-    padding-top: 18px;
-    padding-bottom: 18px;
-    line-height: 0;
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px 64px;
   }
-.logo {
-    fill: #0b0803;
-  }
-.footer-bottom{
+  
+  .footer-bottom {
     background: var(--Color-Scheme-1-Foreground, #C29D84);
-    border-top: 1px solid var(--Color-Scheme-1-Border, #0B080326);
-    width: 1312;
-    
-height: 100;
-justify-content: space-between;
-border-radius: Radius/Large;
-border-width: Stroke/Border Width;
-padding-top: 32px;
-padding-right: 48px;
-padding-bottom: 32px;
-padding-left: 48px;
-
-}
-.footer-nav{
-    width: 456;
-height: 24;
-gap: 32px;
-}
-
-
-
-
-.footer-copy {
-    background: var(--Color-Scheme-1-Text, #0B0803);
-    width: 245;
-    height: 21;
+    border-top: 1px solid rgba(11, 8, 3, 0.15);
+    border-radius: 16px;
+    padding: 32px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+  }
+  
+  .footer-nav {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-nav-item {
+    font-size: 16px;
+    color: #0b0803;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .footer-nav-item:hover {
+    opacity: 0.7;
+  }
+  
+  .footer-copy {
     text-align: center;
     font-size: 14px;
-    font-family: Quicksand;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 14px;
-    line-height: 150%;
-    letter-spacing: 0%;
-}
-
-
+    color: #0b0803;
+    font-family: Quicksand, sans-serif;
+  }
+  
+  /* ---------- Tablet ---------- */
+  @media (max-width: 1024px) {
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 24px;
+    }
+  
+    .footer-nav {
+      justify-content: center;
+    }
+  }
+  
+  /* ---------- Mobile ---------- */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 16px;
+    }
+  
+    .footer-bottom {
+      padding: 24px;
+      gap: 16px;
+    }
+  
+    .footer-brand {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .social-links {
+      justify-content: center;
+    }
+  
+    .footer-nav {
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+  
+    .footer-nav-item {
+      padding: 8px 0;
+    }
+  
+    .footer-copy {
+      font-size: 12px;
+    }
+  }
+  
