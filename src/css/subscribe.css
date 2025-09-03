@@ -14,7 +14,7 @@
   font-family: 'Aboreto', cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 48px;
+  font-size: 28px;
   line-height: 120%;
   letter-spacing: -1%;
   color:#0B0803;
@@ -24,17 +24,18 @@
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 150%;
   letter-spacing: 0;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 /* Форма */
 .form-group {
   display: flex;
-  align-items: center;
-  gap: 16px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
   width: 100%;
   margin-top: 16px;
 }
@@ -49,22 +50,27 @@
 }
 
 .subscribe-form input {
-  width: 339px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
   height: 40px;
   opacity: 1;
   border-radius: 12px;
   padding: 8px 12px;
   border-width: 1px;
-  background: var(--Opacity-Transparent, #E0CBB4);
-  border: 1px solid var(--Opacity-Neutral-Darkest-15, #0B080326);
+  background: #E0CBB4;
+  border: 1px solid #0B080326;
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: 0;
-  outline: ;
-  
+}
+
+.subscribe-form input::placeholder {
+  color: #5c4f44;
+  opacity: 0.8;
 }
 
 .subscribe-form button {
@@ -73,7 +79,7 @@
   justify-content: center;
   gap: 12px;
   flex-shrink: 0;
-  width: 158px;
+  width: 100%;
   height: 44px;
   padding: 10px 24px;
   background-color: #6F4E37;
@@ -89,9 +95,9 @@
   cursor: pointer;
   transition: background 0.3s ease;
   box-shadow:
-    0px 1px 2px 0px var(--OpacityNeutralDarkest5),
+    0px 1px 2px 0px #0B08030D,
     0px -2px 1px 0px #00000033 inset,
-    0px 0px 0px 1px var(--OpacityNeutralDarkest15) inset,
+    0px 0px 0px 1px #0B080326 inset,
     0px 2px 1px 0px #FFFFFF40 inset,
     0px 32px 24px 0px #FFFFFF0D inset;
   opacity: 1;
@@ -118,11 +124,6 @@
   background: #fff0f0;
 }
 
-.subscribe-form input::placeholder {
-  color: #5c4f44;
-  opacity: 0.8;
-}
-
 .icon-wrap {
   display: flex;
   align-items: center;
@@ -132,112 +133,85 @@
 }
 
 .terms {
-  font-size: 12px;
-  margin-top: 12px;
+  font-size: 10px;
+  margin-bottom: 12px;
   color: #333;
 }
 
 .subscribe-section {
-  padding: 64px 0;
+  padding: 24px 0;
   background: #E0CBB4;
 }
 
 .subscribe-section .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 48px;
-  max-width: 1312px;
+  max-width: 320px;
+  width: 100%;
+  gap: 24px;
+  padding: 0;
   margin: 0 auto;
-  padding: 0 16px;
 }
 
 .coffee-text {
-  flex: 1 1 0;
-  min-width: 320px;
+  width: 100%;
+  text-align: left;
 }
 
 .coffee-image img {
   display: block;
-  width: 480px;
+  width: 288px;
+  height: 400px;
   max-width: 100%;
-  height: auto;
   border-radius: 24px;
   object-fit: cover;
+  margin: 0 auto;
 }
 
-/* Tablet only */
-@media (max-width: 1439px) and (min-width: 768px) {
+/* ====== Tablet: от 768px ====== */
+@media screen and (min-width: 768px) {
+  .subscribe-section {
+    padding: 64px 0;
+  }
   .subscribe-section .container {
-    flex-direction: column;
-    align-items: center;
     max-width: 704px;
     gap: 32px;
     padding: 0 16px;
   }
+  .coffee-title {
+    font-size: 36px;
+  }
+  .coffee-description p {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
   .coffee-image picture,
   .coffee-image img {
     width: 704px;
-    max-width: 100%;
     height: 400px;
     border-radius: 24px;
-    object-fit: cover;
-    display: block;
-  }
-  .coffee-text {
-    width: 100%;
-    text-align: left;
   }
 }
 
-/* Mobile (до 767px) */
-@media (max-width: 767px) {
-  .subscribe-section {
-    padding: 24px 0;
-  }
+/* ====== Desktop: от 1440px ====== */
+@media screen and (min-width: 1440px) {
   .subscribe-section .container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    max-width: 320px;
-    width: 100%;
-    gap: 24px;
-    padding: 0 0;
-  }
-  .coffee-title {
-    font-size: 28px;
-    text-align: left;
-  }
-  .coffee-description p {
-    font-size: 14px;
-    margin-bottom: 16px;
+    justify-content: space-between;
+    max-width: 1312px;
+    gap: 48px;
+    padding: 0 16px;
   }
   .coffee-text {
-    width: 100%;
-    text-align: left;
-  }
-  .form-group {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
-  }
-  .subscribe-form input,
-  .subscribe-form button {
-    width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-  }
-  .terms {
-    font-size: 10px;
-    margin-bottom: 12px;
+    flex: 1 1 0;
+    min-width: 320px;
   }
   .coffee-image picture,
   .coffee-image img {
-    width: 288px;
+    width: 480px;
     height: 400px;
-    max-width: 100%;
     border-radius: 24px;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
   }
 }
