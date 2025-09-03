@@ -1,0 +1,113 @@
+/* ===== Базові стилі (мобілка) ===== */
+.footer {
+  background: #b58869;
+  padding: 24px 0;
+}
+
+.footer-bottom {
+  background: #c29d84;
+  border: 1px solid rgba(11, 8, 3, 0.15);
+  border-radius: 40px;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-link {
+  display: block;
+  width: 196px;
+  height: 84px;
+}
+
+.social-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-link {
+  display: block;
+  height: 32px;
+}
+
+.social-link svg {
+  fill: #0b0803;
+  transition: opacity 259ms ease-in-out;
+}
+
+.social-link:hover svg,
+.social-link:focus svg {
+  opacity: 0.5;
+}
+
+.social-link:active svg {
+  opacity: 0.7;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.footer-nav-item {
+  color: #0b0803;
+  line-height: 1.5;
+  transition: opacity 250ms ease-in-out;
+}
+
+.footer-nav-item:hover,
+.footer-nav-item:focus {
+  opacity: 0.5;
+}
+
+.footer-nav-item:active {
+  opacity: 0.7;
+}
+
+.footer-copy {
+  font-size: 14px;
+  margin-top: 32px;
+  text-align: center;
+}
+
+/* ===== Tablet (min-width: 768px) ===== */
+@media screen and (min-width: 768px) {
+  .footer-brand {
+    flex-direction: row;
+  }
+
+  .footer-link svg,
+  .footer-link {
+    width: 84px;
+    height: 36px;
+  }
+
+  .social-link svg,
+  .social-link {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-nav {
+    flex-direction: row;
+  }
+}
+
+/* ===== Desktop (min-width: 1024px) ===== */
+@media screen and (min-width: 1440px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 32px 48px 32px 48px;
+  }
+}
