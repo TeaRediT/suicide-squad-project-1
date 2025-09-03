@@ -19,7 +19,7 @@
     />
     <title>CoffeeJoy</title>
     <script type="module" crossorigin src="/suicide-squad-project-1/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/suicide-squad-project-1/assets/index-BXfB1qPj.css">
+    <link rel="stylesheet" crossorigin href="/suicide-squad-project-1/assets/index-Dm-XNZW-.css">
   </head>
   <body>
     <header class="header">
@@ -419,7 +419,7 @@
         today!
       </p>
       <form class="subscribe-form">
-        <label class="subscribe-label">
+        <div class="form-content">
           <input
             class="subscribe-input"
             type="email"
@@ -427,10 +427,11 @@
             name="email"
             placeholder="Your Email Here"
             required
+            autocomplete="email"
           />
+          <label class="subscribe-label" for="email"></label>
           <p class="subscribe-input-error">Error Text</p>
-        </label>
-        <p class="subscribe-input-error">Error Text</p>
+        </div>
         <button type="submit">
           Subscribe
           <svg width="24" height="24">
@@ -808,7 +809,6 @@
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          frameborder="0"
         ></iframe>
       </div>
     </div>
