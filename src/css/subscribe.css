@@ -1,0 +1,148 @@
+.subscribe-section {
+  padding: 64px 0;
+}
+
+.coffee-items {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.coffee-title {
+  font-family: 'Aboreto', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.coffee-description {
+  margin-bottom: 32px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Форма */
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.subscribe-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+  padding: 8px 12px;
+  background-color: transparent;
+  border: 1px solid rgba(11, 8, 3, 0.15);
+  line-height: 1.5;
+}
+
+.subscribe-input::placeholder {
+  color: rgba(11, 8, 3, 0.6);
+}
+
+.subscribe-input-error {
+  display: none;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #7f1c1c;
+}
+
+.subscribe-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  height: 44px;
+  padding: 10px 24px;
+  background-color: #6f4e37;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: 500;
+  box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+    inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+  border-radius: 100px;
+  border: none;
+  transition: opacity 250ms ease-in-out;
+  margin-top: 24px;
+}
+
+.subscribe-form button svg {
+  fill: #fff;
+}
+
+/* Кнопка: hover, focus, active */
+.subscribe-form button:hover,
+.subscribe-form button:focus {
+  opacity: 0.5;
+}
+.subscribe-form button:active {
+  opacity: 0.7;
+  box-shadow: none;
+}
+
+/* Input: valid и invalid */
+
+.subscribe-input:not(:placeholder-shown):invalid,
+.subscribe-input:not(:placeholder-shown):invalid {
+  border-color: #7f1c1c;
+  color: #7f1c1c;
+}
+
+.subscribe-input:not(:placeholder-shown):invalid + .subscribe-input-error {
+  display: block;
+}
+
+.terms {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 16px;
+}
+
+.coffee-image img {
+  width: 100%;
+  border-radius: 40px;
+}
+
+/* ====== Tablet: от 768px ====== */
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    flex-direction: row;
+  }
+
+  .subscribe-label {
+    margin-right: 24px;
+  }
+
+  .subscribe-input {
+    height: 44px;
+    width: 340px;
+  }
+
+  .subscribe-form button {
+    width: auto;
+    margin: 0;
+    min-width: 158px;
+  }
+}
+
+/* ====== Desktop: от 1440px ====== */
+@media screen and (min-width: 1440px) {
+  .coffee-items {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .coffee-title {
+    font-size: 48px;
+  }
+}

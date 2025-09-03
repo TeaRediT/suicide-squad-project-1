@@ -1,1 +1,61 @@
-<section class="subscribe-section">5</section>
+<section class="subscribe-section">
+  <div class="container coffee-items">
+    <div class="coffee-text">
+      <h2 class="coffee-title">JOIN OUR COFFEE COMMUNITY</h2>
+      <p class="coffee-description">
+        Experience the joy of coffee delivered right to your door. Sign up
+        today!
+      </p>
+      <form class="subscribe-form">
+        <label class="subscribe-label">
+          <input
+            class="subscribe-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email Here"
+            required
+          />
+          <p class="subscribe-input-error">Error Text</p>
+        </label>
+        <p class="subscribe-input-error">Error Text</p>
+        <button type="submit">
+          Subscribe
+          <svg width="24" height="24">
+            <use href="images/svg/icons.svg#icon-arrows-right"></use>
+          </svg>
+        </button>
+      </form>
+      <p class="terms">
+        By clicking Get Started, you agree to our Terms and Conditions.
+      </p>
+    </div>
+    <picture class="coffee-image">
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          images/subscribe/join-community-desktop@1x.jpg 1x,
+          images/subscribe/join-community-desktop@2x.jpg 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          images/subscribe/join-community-tablet1x.jpg 1x,
+          images/subscribe/join-community-tablet2x.jpg 2x
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          images/subscribe/join-community-mobile@1x.jpg 1x,
+          images/subscribe/join-community-mobile@2x.jpg 2x
+        "
+      />
+      <img
+        src="images/subscribe/join-community-desktop@1x.jpg"
+        alt="Join our coffee community"
+      />
+    </picture>
+  </div>
+</section>
