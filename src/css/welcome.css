@@ -74,6 +74,7 @@
 }
 
 .welcome-btn:active {
+  box-shadow: none;
   opacity: 1;
 }
 
