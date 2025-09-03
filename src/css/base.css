@@ -2,4 +2,9 @@ body {
   font-family: 'Quicksand', sans-serif;
   color: #0b0803;
   background-color: #e0cbb4;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
