@@ -1,41 +1,33 @@
 .subscription-modal {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease;
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+
   display: flex;
   justify-content: center;
   align-items: center;
 
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 300ms ease, visibility 300ms ease;
+  transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
 }
 
-.subscription-open .subscription-modal {
+.subscription-open.subscription-modal {
   opacity: 1;
   visibility: visible;
-
-  pointer-events: auto;
 }
-
-
 
 /* Контейнер модалки */
 .subscription-content {
   background: #e0cbb4;
   border-radius: 40px;
   padding: 64px 16px;
-  width: 90%;
-  max-width: 320px;
+  width: 288px;
   text-align: center;
   position: relative;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  
 }
 
 /* Кнопка "x" */
@@ -44,41 +36,42 @@
   top: 24px;
   right: 24px;
   border: none;
-  background: none;
-  font-size: 20px;
-  cursor: pointer;
+  background: transparent;
+
+  transition: opacity 250ms ease-in-out;
+}
+
+.subscription-close:hover,
+.subscription-close:focus {
+  opacity: 0.5;
+}
+
+.subscription-close:active {
+  opacity: 0.7;
 }
 
 /* Заголовок */
 .subscription-title {
-font-family: "Aboreto", sans-serif;
-font-weight: 400;
-font-size: 32px;
-
-/* line-height: 38px; */ 
-line-height: 120%;
-letter-spacing: -0.01em;
-text-align: center;
-color: #1a1a1a;
-margin-bottom: 16px;
+  font-family: 'Aboreto', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  margin-bottom: 16px;
 }
 
 /* Текст */
 .subscription-text {
-font-weight: 400;
-font-size: 18px;
-/* line-height: 27px; */ 
-line-height: 150%;
-text-align: center;
-color: #1a1a1a;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
   margin-bottom: 24px;
 }
 
 /* Зображення */
 .subscription-image {
   border-radius: 24px;
-  width: 256px;
-  height: 200px;
   margin: 0 auto;
 }
 
@@ -86,80 +79,67 @@ color: #1a1a1a;
 .subscription-btn {
   display: inline-block;
   border-radius: 100px;
-  padding: 10px 24px;
-  width: 256px;
+  font-weight: 500;
+  line-height: 1.5;
+  min-width: 256px;
   height: 44px;
   border: none;
-  background: #8b5e3c;
+  box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+    inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+  background-color: #6f4e37;
   color: #fff;
-  font-size: 16px;
-  cursor: pointer;
   margin-top: 24px;
+
+  transition: opacity 250ms ease-in-out;
 }
 
+.subscription-btn:hover,
+.subscription-btn:focus {
+  opacity: 0.5;
+}
 
-@media screen and (min-width: 768px)
- {
+.subscription-btn:active {
+  opacity: 0.7;
+  box-shadow: none;
+}
+
+@media screen and (min-width: 768px) {
   .subscription-content {
-  max-width: 768px;
-  border-radius: 40px;
-padding: 64px;
-width: 704px;
+    padding: 64px 30px;
+    width: 704px;
   }
 
-.subscription-image {
-  border-radius: 40px;
-width: 644px;
-height: 374px;
-margin-bottom: 48px;
-}
+  .subscription-image {
+    border-radius: 40px;
+  }
 
   .subscription-title {
     font-size: 36px;
-    margin-bottom: 20px;
   }
 
   .subscription-text {
-    font-size: 16px;
     margin-bottom: 48px;
   }
 
   .subscription-btn {
-    border-radius: 100px;
-padding: 10px 24px;
-width: 340px;
-height: 44px;
-margin-top: 24px;
+    min-width: 340px;
+    margin-top: 48px;
   }
-  
 }
 
-@media screen and (min-width: 1440px){
-    .subscription-content {
-    max-width: 1440px;
-   border-radius: 40px;
-padding: 64px;
-width: 866px;
+@media screen and (min-width: 1440px) {
+  .subscription-content {
+    width: 866px;
+    padding: 64px;
   }
 
   .subscription-title {
     font-size: 48px;
   }
 
-  .subscription-text {
-    font-size: 18px;
-  }
-
-  .subscription-image {
-    border-radius: 40px;
-width: 644px;
-height: 374px;
-  }
-
   .subscription-btn {
-  border-radius: 100px;
-padding: 10px 24px;
-width: 274px;
-height: 44px;
+    min-width: 274px;
   }
 }
