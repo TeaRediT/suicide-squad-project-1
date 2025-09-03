@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #E0CBB4;
+}
+
+.coffee-section {
+  width: 1440px;
+  height: 528px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #E0CBB4;
+  box-sizing: border-box;
+}
+
+.coffee-container {
+  width: 1312px;
+  height: 400px;
+  background: #E0CBB4; 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  padding: 0;
+}
+
+.coffee-text h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.coffee-text p {
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.coffee-title {
+  font-family: 'Aboreto', cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: -1%;
+  color:#0B0803;
+}
+
+.coffee-description p {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0;
+  margin-bottom: 24px;
+}
+
+/* Форма */
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 16px;
+  
+}
+
+.subscribe-form input {
+  width: 339px;
+  height: 40px;
+  opacity: 1;
+  border-radius: 12px;
+  padding: 8px 12px;
+  border-width: 1px;
+  background: var(--Opacity-Transparent, #E0CBB4);
+  border: 1px solid var(--Opacity-Neutral-Darkest-15, #0B080326);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+  outline: ;
+  
+}
+
+.subscribe-form input::placeholder {
+  color: #5c4f44;
+  opacity: 0.8;
+}
+
+.subscribe-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-shrink: 0;
+  width: 158px;
+  height: 44px;
+  padding: 10px 24px;
+  background-color: #6F4E37;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow:
+    0px 1px 2px 0px var(--OpacityNeutralDarkest5),
+    0px -2px 1px 0px #00000033 inset,
+    0px 0px 0px 1px var(--OpacityNeutralDarkest15) inset,
+    0px 2px 1px 0px #FFFFFF40 inset,
+    0px 32px 24px 0px #FFFFFF0D inset;
+  opacity: 1;
+  margin: 0;
+}
+
+.subscribe-form button:hover {
+  background-color: #4d2e1f;
+}
+
+.icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.terms {
+  font-size: 12px;
+  margin-top: 12px;
+  color: #333;
+}
+
+.subscribe-section {
+  padding: 64px 0;
+  background: #E0CBB4;
+}
+
+.subscribe-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 48px;
+  max-width: 1312px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.coffee-text {
+  flex: 1 1 0;
+  min-width: 320px;
+}
+
+.coffee-image img {
+  display: block;
+  width: 480px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+/* Tablet only */
+@media (max-width: 1439px) and (min-width: 768px) {
+  .subscribe-section .container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 704px;
+    gap: 32px;
+    padding: 0 16px;
+  }
+  .coffee-image picture,
+  .coffee-image img {
+    width: 704px;
+    max-width: 100%;
+    height: 400px;
+    border-radius: 24px;
+    object-fit: cover;
+    display: block;
+  }
+  .coffee-text {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Mobile (до 767px) */
+@media (max-width: 767px) {
+  .subscribe-section {
+    padding: 24px 0;
+  }
+  .subscribe-section .container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 320px;
+    width: 100%;
+    gap: 24px;
+    padding: 0 0;
+  }
+  .coffee-title {
+    font-size: 28px;
+    text-align: left;
+  }
+  .coffee-description p {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  .coffee-text {
+    width: 100%;
+    text-align: left;
+  }
+  .form-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+  .terms {
+    font-size: 10px;
+    margin-bottom: 12px;
+  }
+  .coffee-image picture,
+  .coffee-image img {
+    width: 288px;
+    height: 400px;
+    max-width: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+}
