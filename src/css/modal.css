@@ -7,7 +7,7 @@
 }
 
 .subscription-open .subscription-modal {
-  display: flex; /* або block, залежно від layout */
+  display: flex;
   justify-content: center;
   align-items: center;
 }
