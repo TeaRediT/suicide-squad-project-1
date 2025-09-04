@@ -41,6 +41,10 @@
   line-height: 1.5;
 }
 
+.subscribe-input:focus {
+  border: 1px solid rgba(11, 8, 3, 0.35);
+}
+
 .subscribe-input::placeholder {
   color: rgba(11, 8, 3, 0.6);
 }
@@ -144,5 +148,10 @@
 
   .coffee-title {
     font-size: 48px;
+  }
+
+  .coffee-text,
+  .coffee-image {
+    width: 640px;
   }
 }
