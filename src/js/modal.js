@@ -4,30 +4,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalCloseIcon = document.querySelector('.subscription-close');
   const modalCloseBtn = document.querySelector('.subscription-btn');
 
-  // Відкриваємо модалку після успішної валідації
   form.addEventListener('submit', e => {
-    e.preventDefault(); // блокуємо реальну відправку
+    e.preventDefault();
     if (form.checkValidity()) {
       modalOverlay.classList.add('subscription-open');
-      form.reset(); // очищаємо поле після підписки (опціонально)
+      form.reset();
     }
   });
 
-  // Закриття модалки
   [modalCloseIcon, modalCloseBtn].forEach(btn => {
     btn.addEventListener('click', () => {
       modalOverlay.classList.remove('subscription-open');
     });
   });
 
-  // Закриття по кліку на фон
   modalOverlay.addEventListener('click', e => {
     if (e.target === modalOverlay) {
       modalOverlay.classList.remove('subscription-open');
     }
   });
 
-  // Закриття по Escape
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
       modalOverlay.classList.remove('subscription-open');
